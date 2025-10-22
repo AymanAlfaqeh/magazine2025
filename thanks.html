@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>كلمة شكر</title>
+
+  <style>
+    /* v4.3c: Elegant amber card */
+    .thanks-wrap{display:flex;justify-content:center;align-items:center;margin:18px auto 8px;max-width:980px;padding:0 14px}
+    .thanks-card{
+      position:relative;
+      background: radial-gradient(120% 120% at 0% 0%, #fff 0%, #fffaf2 55%, #fde9c8 100%);
+      border-radius:26px; padding:34px 28px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.12);
+      border:1px solid #f5d08a; overflow:hidden;
+    }
+    /* Ornamental golden frame */
+    .thanks-card:before{
+      content:""; position:absolute; inset:0; border-radius:26px; padding:1px;
+      background: linear-gradient(135deg,#b45309,#f59e0b,#b45309);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      pointer-events:none;
+    }
+    /* Subtle botanical corners */
+    .ornament{ position:absolute; width:180px; height:180px; opacity:.08; filter:blur(.2px); }
+    .ornament.tl{ top:-8px; inset-inline-start:-8px; background: radial-gradient(60% 60% at 50% 50%, #b45309, transparent 70%); border-radius:50%;}
+    .ornament.br{ bottom:-20px; inset-inline-end:-20px; background: radial-gradient(60% 60% at 50% 50%, #f59e0b, transparent 70%); border-radius:50%;}
+    .thanks-title{ font-size:30px; margin:0 0 8px; color:#7c2d12; font-weight:800; letter-spacing:.3px }
+    .thanks-line{height:2px;background:linear-gradient(90deg,#b45309,#fbbf24,#b45309); margin:10px 0 18px; border-radius:2px}
+    .thanks-text{ font-size:19px; color:#1f2937; line-height:2.0 }
+    .thanks-footer{ margin-top:14px; color:#6b7280; font-size:14px }
+    .kufic{ font-family:'Traditional Arabic','Amiri','Scheherazade',serif; }
+    .footer-phrase{ text-align:center; margin:28px 0 6px; font-size:18px; color:#1f2937; }
+    .footer-phrase span{ font-family:'Traditional Arabic','Amiri','Scheherazade',serif; font-weight:700; letter-spacing:.4px; color:#111827; }
+  </style>
+
+</head>
+<body style="--accent:#14B8A6">
+<header><h1>كلمة شكر</h1></header>
+<nav>
+  <a href="index.html">المقدمة</a>
+  <a href="living_things.html">الكائنات الحية</a>
+  <a href="plants.html">النباتات</a>
+  <a href="animals.html">الحيوانات</a>
+  <a href="fungi.html">الفطريات</a>
+  <a href="bacteria.html">البكتيريا</a>
+  <a href="viruses.html">الفيروسات</a>
+  <a href="exam.html">الامتحان والشهادة</a>
+  <a class="active" href="thanks.html">كلمة شكر</a>
+</nav>
+<main>
+
+  <div class="thanks-wrap">
+    <div class="thanks-card">
+      <div class="ornament tl"></div>
+      <div class="ornament br"></div>
+      <h2 class="thanks-title kufic">شكر وتقدير</h2>
+      <div class="thanks-line"></div>
+      <p class="thanks-text kufic">
+        إلى <strong>مدرسة ضاحية الأمير راشد</strong> ممثلةً بمديرتها
+        <strong>الأستاذة الفاضلة ريحانه العمري</strong>
+        و<strong>الدكتورة وفاء بني ياسين</strong> وجميع
+        <strong>الكادر التدريسي المتميز</strong>.
+      </p>
+      <div class="thanks-footer">لكم منا كل الامتنان والتقدير على دعمكم وجهودكم المباركة.</div>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <a class="btn prev" href="exam.html">السابق: الاختبار</a>
+    <span></span>
+  </div>
+</main>
+<div class="footer"><span class="kufic">تم بحمد الله</span></div>
+</body>
+</html>

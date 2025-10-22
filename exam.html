@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>الامتحان والشهادة</title>
+  <style>
+    #qContainer{ direction:rtl; text-align:right }
+
+    .q-card{ background:#fff; border-radius:16px; box-shadow:var(--shadow); padding:18px; margin:14px 0 }
+    .q-head{ display:flex; flex-direction:row-reverse; justify-content:space-between; align-items:center; margin-bottom:12px }
+    .q-head .step{ font-weight:800; color:#2563eb }
+    .q-text{ font-size:18px; font-weight:700; color:#0f172a; margin-inline-start:0; margin-inline-end:8px; text-align:right }
+    .q-options{ display:grid; gap:10px }
+    .opt{ display:flex; gap:8px; align-items:center; background:#f8fafc; border:1px solid #e5e7eb; padding:10px; border-radius:12px }
+    .q-actions{ margin-top:12px; display:flex; gap:10px }
+    .q-explain{ margin-top:10px; background:#f1f5f9; border-radius:10px; padding:10px }
+  </style>
+</head>
+<body style="--accent:#6366F1">
+<header><h1>الاختبار والشهادة</h1></header>
+<nav>
+  <a href="index.html">المقدمة</a>
+  <a href="living_things.html">الكائنات الحية</a>
+  <a href="plants.html">النباتات</a>
+  <a href="animals.html">الحيوانات</a>
+  <a href="fungi.html">الفطريات</a>
+  <a href="bacteria.html">البكتيريا</a>
+  <a href="viruses.html">الفيروسات</a>
+  <a class="active" href="exam.html">الامتحان والشهادة</a>
+  <a href="thanks.html">كلمة شكر</a>
+</nav>
+<main>
+  <div class="card" id="introCard" style="background-image: linear-gradient(#327cec,#b6b7bd)">
+    <h2>البدء</h2>
+    <p>اكتب اسمك، ثم ابدأ. سيظهر <strong>سؤال واحد في كل مرة</strong>، مع أسئلة وخيارات <strong>عشوائية</strong> في كل محاولة.</p>
+    <input id="studentName" placeholder="اكتب اسمك هنا" style="padding:10px; border-radius:12px; width:100%; max-width:360px">
+    <div style="margin-top:12px">
+      <button class="btn" onclick="startQuiz()">ابدأ الامتحان</button>
+    </div>
+  </div>
+
+  <div class="q-card" id="questionCard" style="display:none;background-image: linear-gradient(#327cec,#b6b7bd)">
+    <div id="qContainer"></div>
+  </div>
+
+  <div class="card" id="resultCard" style="display:none;background-image: linear-gradient(#ca213d,#b6b7bd)">
+    <h2>النتيجة</h2>
+    <p id="result" style="font-weight:700"></p>
+    <p id="passNote"></p>
+    <div id="certificate"></div>
+    <div style="margin-top:10px; display:flex; gap:10px">
+      <a class="btn" href="exam.html">إعادة المحاولة</a>
+      <a class="btn next" href="thanks.html">الانتقال إلى صفحة كلمة شكر</a>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <a class="btn prev" href="viruses.html">السابق: الفيروسات</a>
+    <a class="btn next" href="thanks.html">التالي: كلمة شكر</a>
+  </div>
+</main>
+<div class="footer">بالتوفيق 🌟</div>
+<script src="assets/js/exam.js"></script>
+</body>
+</html>
